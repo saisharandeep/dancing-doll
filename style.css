@@ -1,0 +1,111 @@
+.main{
+    border: 3px solid black;
+    height: 500px;
+    margin-top: 100px;
+    background: black;
+}
+.main:hover{
+    animation: changecolor 1s 0.1s infinite;
+}
+@keyframes changecolor{
+    0%{background: white;}
+    25%{background: yellow;}
+    50%{background: violet;}
+    100%{background: gold;}
+}
+.face{
+    background: chartreuse;
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.main:hover .face{
+    transform: scale(1.2);
+    animation:  moveface 1s 0.1s infinite;
+}
+@keyframes moveface {
+    0%{transform: scale(1);}
+    
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+    
+}
+.eyes{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.leye,.reye{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.body1{
+    display: flex;
+    justify-content:  space-evenly;
+    margin: auto;
+    width: 250px;
+    margin-top: 10px;
+    
+}
+.larm,.rarm{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+
+}
+.main:hover .rarm {
+    transform: rotate(-30deg);
+    animation:movearm 1s 0.1s infinite ;
+}
+@keyframes movearm {
+    0%{transform: rotate(0deg);}
+    
+    50%{transform: rotate(15deg);}
+    100%{transform: rotate(-30deg);}
+}
+.main:hover .larm {
+    transform: rotate(-30deg);
+    animation:movearm 1s 0.1s infinite ;
+}
+.center{
+    height: 150px;
+    width:150px;
+    background: chartreuse;
+    border-radius: 0% 0% 40% 40%;
+
+}
+.legs{
+    display: flex;
+    justify-content:space-evenly;
+    margin: auto;
+    width: 200px;
+    margin-top: -20px;
+    
+}
+.main:hover .lleg{
+    transform: rotate(60deg);
+    animation: moveleg 1s 0.1s infinite;
+}
+.main:hover .rleg{
+    transform: rotate(60deg);
+    animation: moveleg 1s 0s infinite;
+}
+@keyframes moveleg{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(30deg);}
+    100%{transform: rotate(60deg);}
+}
+.lleg,.rleg{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
